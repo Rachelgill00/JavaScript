@@ -20,6 +20,16 @@
         console.log(name); // 输出解构后的变量值
         console.log(age); // 输出解构后的变量值
 
+        const {log} = console; // 对象解构赋值
+        log("这是使用解构赋值后的log函数"); // 使用解构后的函数
+
+        log(`解析后的name: ${name}, age: ${age}`); // 输出解构后的变量值
+
+        const {abs, ceil, floor} = Math; // 对象解构赋值
+        log(`Math.abs(-5) = ${abs(-5)}`); // 使用解构后的函数
+        log(`Math.ceil(4.2) = ${ceil(4.2)}`); // 使用解构后的函数
+        log(`Math.floor(4.8) = ${floor(4.8)}`); // 使用解构后的函数
+
     </script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unicodeLearn</title>
+</head>
+<body>
+    
+    <script>
+        const a = "\u0061"; // 使用Unicode转义序列表示小写字母a
+        console.log(`小写字母a的unicode码点: ${a}`); // 输出: 97
+        // Unicode编码
+        let unicodeStr = "\u4F60\u597D"; // 使用Unicode转义序列表示"你好"
+        console.log(unicodeStr); // 输出: 你好
+
+        // 字符串遍历器接口
+        const str = "hello world";
+        for (let i of str){
+            console.log(i); // 输出字符串中的每个字符
+        }
+
+        // 之前
+        for (let i = 0; i < str.length; i++){
+            console.log(str[i]); // 输出字符串中的每个字符
+        }
+
+    </script>
+
+</body>
+</html>
