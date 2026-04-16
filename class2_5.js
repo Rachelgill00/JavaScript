@@ -15,7 +15,7 @@ server.on('request', (req, res) => {
   }
   // 设置Content-type响应头，告诉浏览器响应体的内容类型和编码格式,防止中文乱码
   res.setHeader('Content-Type', 'text/html; charset=utf-8') 
-  // 把内容发送给客户端
+  // 把内容发送给客户端（发送的 HTTP 响应报文）
   res.end(content)
 })
 

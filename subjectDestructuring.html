@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象解构</title>
+</head>
+<body>
+    <script>
+        var user = {
+            name:"iwen",
+            age: 20
+        }
+
+        console.log(user); // 输出对象
+        console.log(user.name); // 输出对象的属性值
+        console.log(user.age); // 输出对象的属性值
+
+        const {name, age} = user; // 对象解构赋值
+        console.log(name); // 输出解构后的变量值
+        console.log(age); // 输出解构后的变量值
+
+    </script>
+</body>
+</html>
